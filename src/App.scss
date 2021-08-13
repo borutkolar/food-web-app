@@ -1,0 +1,76 @@
+@import "./styles/mixins.scss";
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+
+  @media (max-width: 350px) {
+    font-size: 9px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  * {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 100rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+
+  @include tablet {
+    width: 95%;
+  }
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  color: orange;
+
+  svg {
+    margin-right: 1.5rem;
+    font-size: 3rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 3.5rem;
+  }
+}
+
+.info-message {
+  margin: 0;
+  color: #323232;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.with-box-shadow {
+  box-shadow: 3px 3px 5px #c8c8c8;
+}
+
+.with-hover-scale {
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+
+    @include tablet {
+      transform: none;
+    }
+  }
+}

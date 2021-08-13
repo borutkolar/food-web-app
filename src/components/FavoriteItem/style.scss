@@ -1,0 +1,38 @@
+.favorite-item {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+
+  .recipe-data {
+    flex: 1;
+
+    p {
+      margin: 0 0 0.5rem;
+      color: black;
+      font-size: 1.8rem;
+    }
+
+    .preparation-time {
+      display: flex;
+      align-items: center;
+      color: grey;
+
+      span {
+        font-size: 1.5rem;
+      }
+
+      svg {
+        margin-right: 0.5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .favorite-icon {
+    margin-left: 1rem;
+    color: yellowgreen;
+    font-size: 2rem;
+  }
+}

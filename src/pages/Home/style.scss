@@ -1,0 +1,57 @@
+@import "../../styles/mixins.scss";
+
+.home-page {
+  .favorites-title {
+    display: block;
+    color: yellowgreen;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+
+    div {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .search-input {
+    margin: 1.5rem 0 3rem;
+  }
+
+  .load-more {
+    margin-top: 4rem;
+    text-align: center;
+
+    button {
+      width: 22rem;
+      padding: 1rem 0;
+      border: 2px solid orange;
+      border-radius: 5px;
+      outline: none;
+      background: none;
+      color: orange;
+      font-weight: 700;
+      font-size: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: orange;
+        color: white;
+
+        @include tablet {
+          background: none;
+          color: orange;
+        }
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

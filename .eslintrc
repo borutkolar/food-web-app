@@ -26,7 +26,6 @@
         "endOfLine": "auto"
       }
     ],
-    "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/ban-types": [
       "error",
       {
@@ -35,7 +34,8 @@
           "{}": false
         }
       }
-    ]
+    ],
+    "@typescript-eslint/interface-name-prefix": "off"
   },
   "settings": {
     "react": {

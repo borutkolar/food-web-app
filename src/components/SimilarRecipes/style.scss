@@ -1,0 +1,39 @@
+@import "../../styles/mixins.scss";
+
+.similar-recipes {
+  width: 35%;
+  margin-left: 4rem;
+
+  @include tablet {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .similar-recipes-container {
+    h3 {
+      margin: 0;
+      color: grey;
+      font-size: 2rem;
+
+      @include tablet {
+        margin-top: 2rem;
+      }
+    }
+
+    .similar-recipes-list {
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+
+        .favorite-item {
+          margin-top: 0;
+        }
+      }
+
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

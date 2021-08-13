@@ -1,0 +1,28 @@
+.search-input {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+
+  $placeholderColor: #969696;
+
+  svg {
+    margin-right: 2rem;
+    color: $placeholderColor;
+    font-size: 2rem;
+  }
+
+  input {
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    color: black;
+    font-size: 1.8rem;
+
+    &::placeholder {
+      color: $placeholderColor;
+    }
+  }
+}
